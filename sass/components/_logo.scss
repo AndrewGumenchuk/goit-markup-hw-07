@@ -1,5 +1,6 @@
+@import "../utils/variables";
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: $font-logo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -7,4 +8,9 @@
   color: $primary-text-color;
 
   transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
