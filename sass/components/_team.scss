@@ -1,0 +1,74 @@
+@import "../utils/variables";
+
+.section.our {
+  background-color: $secondary-background-color;
+}
+
+.team {
+  display: flex;
+  > .item:last-child {
+    margin-right: 0px;
+  }
+  > .item {
+    margin-right: 30px;
+
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+.team-cards {
+  height: 162px;
+
+  background-color: $background-color;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  & .team-link {
+    margin-right: 10px;
+  }
+}
+
+.social-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: $icon-color;
+  background-color: $background-color;
+
+  transition: fill 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    fill: $background-color;
+    background-color: $accent-color;
+  }
+}
+
+.section-heading {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.section-headline {
+  margin-top: 0px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: $secondary-text-color;
+}

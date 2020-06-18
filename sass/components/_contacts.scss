@@ -5,35 +5,32 @@
   margin-left: auto;
   align-items: center;
   justify-content: center;
-  &.item {
+  .item {
     display: flex;
+    margin-right: 30px;
   }
-  &.item + &.item {
-    margin-left: 30px;
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
-}
 
-.contact .link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: $secondary-text-color;
-
-  transition: color 250ms $cubic-bezier;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  .link-icon {
+    fill: currentColor;
+    margin-right: 10px;
   }
-}
-
-.link-icon {
-  fill: currentColor;
-  margin-right: 10px;
 }

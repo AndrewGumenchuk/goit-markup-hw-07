@@ -1,0 +1,94 @@
+@import "../utils/variables";
+
+.button-portfolio {
+  padding: 6px 22px;
+
+  border: 0px;
+  border-radius: 4px;
+
+  font-family: inherit;
+
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
+
+  color: $primary-text-color;
+  background-color: $secondary-background-color;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:hover,
+  &:focus {
+    color: $background-color;
+    background-color: $accent-color;
+  }
+}
+
+.button-hero {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $background-color;
+  background-color: $accent-color;
+
+  transition: color 250ms $cubic-bezier;
+}
+
+.button:focus {
+  color: $accent-color;
+}
+
+.button-form {
+  display: inline-block;
+  padding: 10px 55px 10px 56px;
+
+  border-radius: 4px;
+  border: 0px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $background-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: color 250ms $cubic-bezier;
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.exit-modal {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border: 0px;
+  border-radius: 50%;
+
+  transform: translate(9px, -9px);
+
+  background-image: url("../images/close.svg");
+  background-size: 18px, 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: $background-color;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
