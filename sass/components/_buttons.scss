@@ -3,7 +3,7 @@
 .button-portfolio {
   padding: 6px 22px;
 
-  border: 0px;
+  border: 10px;
   border-radius: 4px;
 
   font-family: inherit;
@@ -12,6 +12,7 @@
 
   color: $primary-text-color;
   background-color: $secondary-background-color;
+
   &:last-child {
     margin-right: 0px;
   }
